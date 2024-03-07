@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100vh;
+}
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-main {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    max-height: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 20px 20px 50px;
+    text-align: left;
+}
+.box-message {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    height: 400px;
+    width: 420px;
+    margin: 0 auto;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.box-text {
+    width: 400px;
+}
+h1 {
+    margin-top: 5px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+h2 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.box-message > h1 {
+    margin: 0;
+
+    margin-top: 20px;
+    font-size: 40px;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+
+    font-family: 'Roboto', sans-sersif;
+}
+img {
+    margin-bottom: -5px;
+    margin-right: 15px;
+}
+.icon-success {
+    width: 40px;
+}
+.ilustration,
+.icon-success {
+    margin: 0;
+}
+.labels{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.labels label:last-child{
+    /*text-align: right;*/
+    /*align-self: end;*/
+}
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+form {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 350px;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+
+    border: solid 1px #ccc;
+    padding: 0 20px;
+    border-radius: 5px;
+    height: 45px;
+    width: 350px;
+}
+.btn {
+    display: block;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background: hsl(234, 29%, 20%);
+    margin-top: 20px;
+    height: 50px;
+    width: 350px;
+    padding: 16px 20px;
+    font-size: 15px;
+}
+input:first-of-type:focus {
+    border-color: black;
+}
+.btn:hover {
+    background: linear-gradient(to right, #ff5478, #ff6841);
+    box-shadow: 0 10px 30px hsl(4 100% 67% / 0.7);
+}
+
+.validations {
+    float: right;
+    color: #ea7972;
+}
+.box-message > .btn {
+    width: 100%;
+}
+.box-message > p {
+    font-size: 15px;
+}
+span {
+    font-weight: bolder;
+}
+.mobile {
+    display: none;
+}
+@media (max-width: 600px) {
+    .validations {
+        text-align: right;
+        margin: 0;
+    }
+    label {
+    }
+    .mobile {
+        display: block;
+    }
+    .ilustration {
+        width: 100%;
+    }
+    .desktop {
+        display: none;
+    }
+    .box-main {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: column;
+        max-height: none;
+        height: auto;
+    }
+    form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .box-text {
+        width: 80%;
+    }
+    .box-message {
+        justify-content: space-between;
+        border-radius: 0;
+        max-width: 400px;
+        height: auto;
+        width: 100%;
+        min-height: 100vh;
+    }
+    body {
+        margin: 0;
+        height: auto;
+    }
+    input,
+    .btn {
+        width: 100%;
+    }
+}
