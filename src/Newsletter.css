@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 20px 20px 20px 50px;
     text-align: left;
+    color: black;
 }
 .box-message {
     display: flex;
@@ -58,8 +59,9 @@ h2 {
 p {
     font-size: 16px;
     font-weight: 400;
+    color: black;
 
-    font-family: 'Roboto', sans-sersif;
+    font-family: 'Roboto', sans-serif;
 }
 img {
     margin-bottom: -5px;
